@@ -246,16 +246,15 @@ This will include all of the posts that belong to our single user. The body of t
 
 ```JSON
 {
-  id: 1,
-  name: "CoolCat88",
-  age: 31,
-  posts: [
-    {some post data},
-    {more post data},
-    ...
+  "id": 1,
+  "name": "CoolCat88",
+  "age": 31,
+  "posts": [
+    {"some post data"},
+    {"more post data"}
   ]
-  created_at: "2020-03-30 20:48:16,
-  updated_at: "2020-03-30 20:48:16
+  "created_at": "2020-03-30 20:48:16,
+  "updated_at": "2020-03-30 20:48:16
 }
 ```
 We can return multiple resources that belong directly to our return resource like this:
