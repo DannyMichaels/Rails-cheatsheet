@@ -1,13 +1,35 @@
 # Rails-cheatsheet
 
+ - [Creating a new application](#Creating-a-new-application)
+   - [CLI commands](#CLI-commands)
+   - [Full Example](#Full-Example)
+ - [Database CLI commands](#Database-CLI-commands)
+ - [Additional helpful rails CLI commands](#Additional-helpful-rails-CLI-commands)
+ - [Routes](#Routes)
+   - [URL structure](#URL-structure)
+   - [Creating routes](#Creating-routes)
+   - [Limiting routes](#Limiting-routes)
+   - [Custom routes](#Custom-routes)
+ - [Controllers](#Controllers)
+   - [Generate a controller](#Generate-a-controller)
+   - [Common Active-Record methods](#Common-Active-Record-methods)
+   - [Associations](#Associations)
+ - [Models](#Models)
+   - [Making a model](#Making-a-model)
+   - [Associations](#Associations)
+   - [Validations](#Validations)
+ - [Migrations](#Migrations)
+ - [Scaffold](#Scaffold)
+
 ## Architecture
 
 ![](./MVC-control-flow.png)
 
 <hr />
+
 ## Creating a new application
 
-#### CLI command
+#### CLI commands
 
 Init a new rails app
 
@@ -166,7 +188,7 @@ Reference: http://guides.rubyonrails.org/routing.html
 
 This is where the functional logic for our application is executed. Also this is mostly (outside of `seed.rb`) where we use our active-record methods
 
-## Generate a controller
+#### Generate a controller
 
 We can use the rails generator command to make a controller. By convention, the last name in the controller should be plural, E.X. `UserPhotos`
 
@@ -296,7 +318,7 @@ or generate with table columns
 rails g model Item weight:integer name:string
 ```
 
-#### associations
+#### Associations
 
 One-to-many
 
